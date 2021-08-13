@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+
+
+@font-face {
+  font-family: "shakespeare";
+  src: url("shakespeare.ttf");
+  font-family: "notMyType";
+  src: url("notMyType.otf");
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+  padding: 4.5rem;
+  margin: 0;
+  background-color: #eae6f0;
+  background-image: url("../../img/egirl.gif");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+
+#sidebar {
+    position: absolute;
+    width: 11rem;
+    height: 100%;
+    left: -180px;
+    transition: .4s;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 10px;
+    top: 0px;
+    background: #edc0bf;
+    background: linear-gradient(90deg, #0f57ff81 0, #f552df8a 100%);
+    backdrop-filter: blur(10px);
+  } 
+      
+  #sidebar.active {
+    left: 0;
+    height: 100%;
+  }
+    
+  #sidebar ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+    
+  #sidebar ul li{
+    list-style: none;
+    font-size: 40px;
+    padding: 2px 2px;
+  }
+  
+    
+  #sidebar .toggle-btn {
+    position: absolute;
+    left: 190px;
+    top: 10px;
+  }
+    
+  .toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: rgba(2, 2, 2, 0.938);
+    display: block;
+    margin-top: 4px;
+  }
+
+  div.container-sm {
+    border-radius: 10px;
+    width: 710px;
+    margin: 0px auto;
+    text-align: center;
+    background-image: url("../../img/rainbowRainGIF.gif");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    backdrop-filter: blur(10px);
+  }
+  
+  .container-sm h1{
+    font-family: 'notMyType';
+    font-size: 61px;
+    color: rgb(248, 14, 217);
+  }
+  
+  
+  #wrap {
+    min-height: 30%;
+    max-width: 70vh;
+    display: grid;
+  }
+    
+  #main {
+    overflow:auto;
+    padding-bottom: 30px; /* this needs to be bigger than footer height*/
+  }
+
+  
+
+  
+
+.icon {
+    height: 30px;
+    margin-top: 2px;
+    border-radius: 10px;
+    margin: 1px auto;
+    margin-left: 10px;
+  }
+  
+  div#icons.container {
+    height: 35px;
+    padding-top: 2px;
+    width: 255px;
+    margin: 5px auto;
+    display: block;
+    border-radius: 10px;
+    background-color: rgba(185, 6, 161, 0.185);
+    backdrop-filter: blur(10px);
+  }
+
+
+  
+  div#wrap.example-container {
+    width: 500px;
+    height: 550px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: rgba(185, 6, 161, 0.185);
+    backdrop-filter: blur(10px);
+  }
+
+
+  div#main.example-row.clear-top.container {
+    margin: 0px auto;
+    display: block;
+    width: 200px;
+  }
+
+
+  div#main.example-row.clear-top.container h1{
+    text-align: center;
+    width: 300px;
+    color: #f00b90;
+  }
+  
+  
+  button.btn {
+    margin-bottom: 5px;
+    display: inline-block;
+    margin: 5px auto;
+    width: 260px;
+    height: 55px;
+    font-weight: 900;
+  }
+  
+  button.btn.btn-outline-warning {
+    /* background-image: url("../../img/rain-anime.gif"); */
+    background-position: bottom;
+    background-size: cover; 
+  }
+  
+  button.btn.btn-outline-primary {
+    /* background-image: url("../../img/rain8.gif"); */
+    background-position: center;
+    background-size: cover; 
+  }
+  
+  button.btn.btn-outline-success {
+    /* background-image: url("../../img/rain7.gif"); */
+    background-size: cover;
+    background-position: center; 
+  }
+  
+  button.btn.btn-outline-danger {
+    /* background-image: url("../../img/rain2.gif"); */
+    background-size: cover;
+    background-position: center; 
+  }
+  
+  button.btn.btn-outline-dark {
+    /* background-image: url("../../img/rain6.gif"); */
+    background-size: cover;
+    background-position: center; 
+  }
+  
+  button.btn.btn-outline-secondary {
+    /* background-image: url("../../img/rain-anime-rain.gif"); */
+    background-size: cover;
+    background-position: center; 
+  }
+  
+  button.btn.btn-outline-info {
+    background-image: url("../../img/rain5.gif");
+    background-size: cover;
+    background-position: center; 
+  }
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 725px) {
+    body {
+      padding: 4.5rem;
+      max-width: 2000px;
+      width: 1000px;
+      height: auto;
+      background-repeat: repeat;
+      margin-left: -60px;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  
+    #header img {
+      width: 80vh;
+      display: block;
+      margin: 0px auto;
+    }
+  
+    div#wrap.example.container {
+      width: 200px;
+      display: block;
+    }
+  
+    div#main.example-row.content-main {
+  
+    }
+  
+  div#banner.container {
+    display: block;
+    width: 300px;
+    margin: 0px auto;
+  }
+  
+  div#icons.container {
+    margin: 0px auto;
+    width: 310px;
+    display: block;
+  }
+  
+  
+  
+  }

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <link rel="stylesheet" href="assets/css/merch.css">
+    <title>MERCH</title>
+  </head>
+  <body>
+     
+       
+  <div id="sidebar">
+    <div class="toggle-btn" onclick="show()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>   
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="art.html">Art</a></li>
+
+      </ul>
+  </div>
+
+    <div class="container-sm">
+        <h1>Merch</h1>
+      </div>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div id="wrap" class="example-container">
+            <div id="main" class="example-row clear-top container">
+            <div class="container">
+                    
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+    
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/egirlShirt (4).png" style="width:100%">
+                <!-- <div class="text">Caption Text</div> -->
+              </div>
+    
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/egirlShirt (2).png" style="width:100%">
+              </div>
+    
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/egirlShirt (3).png" style="width:100%">
+              </div>
+    
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/egirlShirt (1).png" style="width:100%">
+              </div>
+    
+              
+
+                 <!-- Next and previous buttons -->
+                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <br>           
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      <script>
+        function show() {
+          document.getElementById('sidebar').classList.toggle('active');
+        }
+      </script> 
+      <script>
+        function myFunction() {    
+          document.getElementById("demo").innerHTML = "Testing";
+        }
+      </script>
+    
+    <script src="assets/js/gallery.js"></script>
+    <script type="module" src="assets/js/home.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="assets/js/starter.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="assets/js/starter.js"></script>
+  </body>
+</html>
